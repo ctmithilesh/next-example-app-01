@@ -1,0 +1,9 @@
+.counter {
+  width: 1200px;
+  height: 1200px;
+  background-color: coral;
+}
+.counter-content {
+  text-align: justify;
+  background-color: lightgrey;
+}

@@ -4,7 +4,7 @@ import '../assets/css/navigation.css'
 const Navigation = () => {
     return (
         <>
-            <ul class="nav">
+            <ul className="nav">
                 <li>
                     <Link href='/'>
                         Home
@@ -22,7 +22,7 @@ const Navigation = () => {
                 </li>
                 <li>
                     <Link href='/cats'>
-                        Products
+                        Cats
                     </Link>
                 </li>
             </ul>
