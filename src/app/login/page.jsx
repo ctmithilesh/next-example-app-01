@@ -20,13 +20,13 @@ async function submitData(formData) {
             const { accessToken, id } = res.data
             cookies.set('user_id', id)
             cookies.set('accessToken', accessToken)
-            
+
         })
         .catch(err => {
             console.log(err)
         })
 
-    redirect('/counter')
+    await redirect('/counter')
 
 }
 

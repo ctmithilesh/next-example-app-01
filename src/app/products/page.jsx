@@ -2,7 +2,7 @@
 import axios from 'axios'
 import React from 'react'
 import ListOfProducts from '../components/ListOfProducts';
-import Image from 'next/image';
+import Image from 'next/image'
 
 export const metadata = {
     title: "Products",
