@@ -3,6 +3,11 @@ import axios from 'axios'
 import React from 'react'
 import ListOfProducts from '../components/ListOfProducts';
 import Image from 'next/image';
+
+export const metadata = {
+    title: "Products",
+    description:"List of Products"
+}
 async function getProducts() {
 
     let data = null;
@@ -27,7 +32,7 @@ const Page = async () => {
         <div>
             <h1>From Products Page </h1>
             {productsCondition ? myData.map((item, index) => (
-                <div key={index}>
+                <div key={index} className="grid grid-cols-4 gap-4">
                     <ListOfProducts item={item} />
                 </div>
 

@@ -1,19 +1,13 @@
-'use client';
-import React, { useState } from 'react'
-import '../assets/css/counter-page.css'
+import CounterComponent from "../components/CounterComponent"
+
+export const metadata = {
+    title: "Counter",
+    description: "Counter App"
+}
 const Page = () => {
 
-    const [count, setCount] = useState(0)
-
     return (
-        <div className="counter">
-            <h1> From Counter Page </h1>
-            <div className="counter-content">
-                <h3> Count is {count} </h3>
-                <button onClick={() => setCount(count + 1)}> +</button>
-                <button onClick={() => setCount(count - 1)}> - </button>
-            </div>
-        </div>
+        <CounterComponent />
     )
 }
 

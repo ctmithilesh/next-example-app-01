@@ -8,7 +8,11 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname:'unsplash.com'
+                hostname: 'unsplash.com'
+            },
+            {
+                protocol: 'https',
+                hostname: "cdn2.thecatapi.com"
             }
         ]
 
