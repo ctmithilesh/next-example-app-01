@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const ListOfProducts = ({ item }) => {
@@ -16,7 +17,9 @@ const ListOfProducts = ({ item }) => {
                 <h2 className="card-title">{item.title}</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="justify-end card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <Link className="btn btn-primary" href={`/products/${item.id}`}>
+                        View Product
+                    </Link>
                 </div>
             </div>
         </div>

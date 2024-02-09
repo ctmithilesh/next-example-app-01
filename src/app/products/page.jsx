@@ -6,7 +6,8 @@ import Image from 'next/image';
 
 export const metadata = {
     title: "Products",
-    description:"List of Products"
+    description: "List of Products",
+    keywords: ["amazon", "apple", "samsung"]
 }
 async function getProducts() {
 

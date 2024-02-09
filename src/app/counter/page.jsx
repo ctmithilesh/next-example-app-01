@@ -1,3 +1,4 @@
+// Server-side page 
 import CounterComponent from "../components/CounterComponent"
 
 export const metadata = {

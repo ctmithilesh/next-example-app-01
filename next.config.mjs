@@ -12,6 +12,10 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
+                hostname: 'daisyui.com'
+            },
+            {
+                protocol: 'https',
                 hostname: "cdn2.thecatapi.com"
             }
         ]
