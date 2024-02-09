@@ -9,23 +9,23 @@ const Page = () => {
 
     const [product, setData] = useState(null)
     const params = useParams()
-    const { id } = params; 
+    const { id } = params;
     const productCondition = product != null && product.length > 0
     useEffect(() => {
-        
+
         getSingleProduct()
-        
-    },[product != null])
-    
+
+    }, [product != null])
+
     async function getSingleProduct() {
         const result = await axios.get(`https://fakestoreapi.com/products/${id}`)
         console.log(result)
         setData([result.data])
-        
+
     }
 
-    
-    
+
+
     return (
         <>
             {productCondition ? product.map((item, index) => (
@@ -46,19 +46,20 @@ const Page = () => {
                             <button className="btn btn-primary">
                                 $ {item.price}
                             </button>
+    
                         </div>
                     </div>
                 </div>
 
 
 
-            )): <span>Loading.... </span>}
-           
-        
-        </>
-            
+            )) : <span>Loading.... </span>}
 
-       
+
+        </>
+
+
+
     )
 }
 

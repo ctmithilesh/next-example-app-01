@@ -11,6 +11,11 @@ const Navigation = () => {
                     </Link>
                 </li>
                 <li>
+                    <Link href='/login'>
+                        Login
+                    </Link>
+                </li>
+                <li>
                     <Link href='/products'>
                         Products
                     </Link>
